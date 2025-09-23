@@ -35,5 +35,24 @@ class DatabaseHelper{
     }
     return await openDatabase(path,readOnly: false);
   }
-
+  Future<List<Map<String,dynamic>>?> getItems({
+    int page=0,
+    int pageSize = 50,
+    String? searchQuery
+  }) async {
+    final db = await database;
+    String whereClause = '';
+    List<dynamic> whereArgs = [];
+    if(searchQuery != null && searchQuery.isNotEmpty){
+      whereClause = 'WHERE name LIKE ?;';
+      final searchTerm = '%$searchQuery%';
+      whereArgs = [searchTerm,searchTerm,searchTerm];
+      return await db?.query(
+        'product_drugs',
+        where: whereClause.isNotEmpty ? whereClause : null,
+        whereArgs: whereArgs.isNotEmpty ? whereArgs: null
+      );
+    }
+    return null;
+  }
 }
