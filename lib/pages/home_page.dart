@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
         title: const Text("Home"),
       ),
       drawer: Drawer(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.black,
         child: Column(
           children: [
             ListTile(

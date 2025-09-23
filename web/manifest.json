@@ -1,11 +1,11 @@
 {
-    "name": "pharmasearch",
-    "short_name": "pharmasearch",
+    "name": "pharma_search",
+    "short_name": "pharma_search",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "pharmasearch is an app used to search project.",
+    "description": "pharma search is an app used to search project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

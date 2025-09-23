@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.am" "\0"
-            VALUE "FileDescription", "pharmasearch" "\0"
+            VALUE "FileDescription", "pharma_search" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "pharmasearch" "\0"
+            VALUE "InternalName", "pharma_search" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2025 com.am. All rights reserved." "\0"
-            VALUE "OriginalFilename", "pharmasearch.exe" "\0"
-            VALUE "ProductName", "pharmasearch" "\0"
+            VALUE "OriginalFilename", "pharma_search.exe" "\0"
+            VALUE "ProductName", "pharma_search" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

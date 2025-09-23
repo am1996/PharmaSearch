@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pharmasearch/pages/home_page.dart';
+import 'package:pharma_search/pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());

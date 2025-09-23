@@ -1,4 +1,4 @@
-package com.am.pharmasearch;
+package com.am.pharma_search;
 
 import io.flutter.embedding.android.FlutterActivity;
 

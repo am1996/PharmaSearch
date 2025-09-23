@@ -1,6 +1,6 @@
-# pharmasearch
+# pharma_search
 
-pharmasearch is an app used to search project.
+pharma_search is an app used to search project.
 
 ## Getting Started
 
