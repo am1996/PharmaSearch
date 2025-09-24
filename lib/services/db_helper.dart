@@ -55,4 +55,15 @@ class DatabaseHelper{
     }
     return null;
   }
+  Future<int> getItemsCount({String? searchQuery}) async {
+    final db = await database;
+    String whereClause = '';
+    List<dynamic> whereArgs = [];
+    if(searchQuery!= null && searchQuery.isNotEmpty){
+      whereClause = 'WHERE name LIKE ?';
+      whereArgs = ["%$searchQuery%"];
+    }
+    final result = await db?.rawQuery('SELECT COUNT(*) as count from product_drugs $whereClause');
+    return Sqflite.firstIntValue(result!) ?? 0;
+  }
 }

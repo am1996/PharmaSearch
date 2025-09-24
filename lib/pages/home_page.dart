@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-
+import '../services/db_helper.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final db = DatabaseHelper();
     return Scaffold(
       appBar: AppBar(
         title: const Text("Home"),
@@ -26,7 +27,7 @@ class HomePage extends StatelessWidget {
       ),
       body: ListView.builder(itemBuilder: (context,index) => Card(
         margin: EdgeInsets.only(bottom: 50),
-        child: Text('hello world'),
+        child: Text((await db.getItemsCount()).toString()),
       ),cacheExtent: 1000, physics: BouncingScrollPhysics(),padding: EdgeInsets.all(10),)
     );
   }
